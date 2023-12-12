@@ -1,8 +1,10 @@
 import { NextResponse } from "next/server";
 
+import { emojis } from "../lib/emoji";
+
 export function GET() {
   return NextResponse.json({
     success: true,
-    message: "Welcome to the emoji server",
+    emojis,
   });
 }
